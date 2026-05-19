@@ -32,7 +32,7 @@ After training, download model.keras from Colab and place it in the project root
 Make sure model.keras is in the same folder as main.py.
 
 # 🎥 Live Webcam Mode
-python main.py --webcam
+|python main.py --webcam|
 
 Detects faces using Haar Cascade (haarcascade_frontalface_default.xml)
 
@@ -45,14 +45,14 @@ Displays real-time FPS on screen
 Press Q to quit and save a 30-second demo clip as demo_clip.avi
 
 # Single Image Mode
-python main.py
+|python main.py|
 
 # OUTPUT
 ## Happy Test
 <img width="365" height="329" alt="image" src="https://github.com/user-attachments/assets/c89badad-ac9e-41f2-bd10-ca277715660f" />
 
 # 🏗️ Model Architectures
-| Model | Input | Params (approx) | Notes |
+| Model | Input | Params (approx) |    Notes |
 | :--- | :---: | :---: | :--- |
 | **CNN Scratch** | 48×48 grayscale | ~1.2M | 3 double-conv blocks + GAP |
 | **MobileNetV2 Frozen** | 96×96 RGB | ~2.3M trainable | Backbone frozen, only head trained |
