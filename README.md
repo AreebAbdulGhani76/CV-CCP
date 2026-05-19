@@ -30,10 +30,15 @@ Make sure model.keras is in the same folder as main.py.
 
 # 🎥 Live Webcam Mode
 python main.py --webcam
+
 Detects faces using Haar Cascade (haarcascade_frontalface_default.xml)
+
 Classifies emotion per face with confidence bar overlay
+
 Shows stable prediction using a rolling deque(maxlen=20)
+
 Displays real-time FPS on screen
+
 Press Q to quit and save a 30-second demo clip as demo_clip.avi
 
 # Single Image Mode
@@ -54,14 +59,20 @@ VGG-Style	48×48 grayscale	~1.8M	VGG-inspired double conv + BN
 Each face crop goes through:
 
 BGR → Grayscale
+
 Gaussian Blur (3×3 kernel)
+
 CLAHE (clipLimit=2.0, tileGridSize=8×8)
+
 Resize to 48×48 (or 96×96 for MobileNet)
+
 Normalize to [0, 1]
 
 # Evaluation Outputs
 Per-class F1-score (via classification_report)
+
 7×7 Confusion matrix (saved as PNG)
+
 Model comparison table (accuracy)
 
 # ⚠️ Known Limitations
