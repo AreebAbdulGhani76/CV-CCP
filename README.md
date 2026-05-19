@@ -53,9 +53,13 @@ python main.py
 
 # 🏗️ Model Architectures
    Model	               Input	            Params (approx)	           Notes
+   
 CNN Scratch	            48×48 grayscale	    ~1.2M	        3 double-conv blocks + GAP
+
 MobileNetV2 Frozen	   96×96 RGB	       ~2.3M trainable	  Backbone frozen, only head trained
+
 MobileNetV2 Fine-tuned	96×96 RGB	       ~3.4M trainable	  Last 30 backbone layers unfrozen
+
 VGG-Style	            48×48 grayscale	    ~1.8M	        VGG-inspired double conv + BN
 
 # Preprocessing Pipeline
