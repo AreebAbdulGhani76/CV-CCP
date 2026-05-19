@@ -88,6 +88,8 @@ Inference speed on CPU is ~5–10 FPS depending on hardware
 
 # 📚 References
 FER-2013 Dataset on Kaggle
+
 MobileNetV2 Paper — Sandler et al., 2018
+
 OpenCV Haar Cascade — haarcascade_frontalface_default.xml
 
