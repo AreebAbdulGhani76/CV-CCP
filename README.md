@@ -52,11 +52,11 @@ python main.py
 <img width="365" height="329" alt="image" src="https://github.com/user-attachments/assets/c89badad-ac9e-41f2-bd10-ca277715660f" />
 
 # 🏗️ Model Architectures
-Model	Input	Params (approx)	Notes
-CNN Scratch	48×48 grayscale	~1.2M	3 double-conv blocks + GAP
-MobileNetV2 Frozen	96×96 RGB	~2.3M trainable	Backbone frozen, only head trained
-MobileNetV2 Fine-tuned	96×96 RGB	~3.4M trainable	Last 30 backbone layers unfrozen
-VGG-Style	48×48 grayscale	~1.8M	VGG-inspired double conv + BN
+   Model	               Input	            Params (approx)	           Notes
+CNN Scratch	            48×48 grayscale	    ~1.2M	        3 double-conv blocks + GAP
+MobileNetV2 Frozen	   96×96 RGB	       ~2.3M trainable	  Backbone frozen, only head trained
+MobileNetV2 Fine-tuned	96×96 RGB	       ~3.4M trainable	  Last 30 backbone layers unfrozen
+VGG-Style	            48×48 grayscale	    ~1.8M	        VGG-inspired double conv + BN
 
 # Preprocessing Pipeline
 Each face crop goes through:
@@ -80,7 +80,9 @@ Model comparison table (accuracy)
 
 # ⚠️ Known Limitations
 Haar Cascade may miss faces at extreme angles (use DNN-based detector for better results)
+
 disgust class is heavily underrepresented in FER-2013 (~550 samples vs 8000+ for happy)
+
 Inference speed on CPU is ~5–10 FPS depending on hardware
 
 # 📚 References
